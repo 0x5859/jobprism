@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/job-skills.schema.json",
+  "title": "JobSkills",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "skill_id",
+        "label",
+        "edge_type"
+      ],
+      "properties": {
+        "skill_id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "edge_type": {
+          "type": "string"
+        },
+        "weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

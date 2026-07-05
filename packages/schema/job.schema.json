@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/job.schema.json",
+  "title": "Job",
+  "type": "object",
+  "required": [
+    "id",
+    "company_id",
+    "title",
+    "source_type",
+    "source_url",
+    "description_hash",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": "string"
+    },
+    "external_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "title_normalized": {
+      "type": "string"
+    },
+    "location_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remote_mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "employment_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "posted_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "description_raw": {
+      "type": "string"
+    },
+    "description_text": {
+      "type": "string"
+    },
+    "description_hash": {
+      "type": "string"
+    },
+    "dedupe_fingerprint": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

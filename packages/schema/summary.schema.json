@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/summary.schema.json",
+  "title": "Summary",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "counts"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "companies",
+        "jobs",
+        "skills",
+        "nodes",
+        "edges"
+      ],
+      "properties": {
+        "companies": {
+          "type": "integer"
+        },
+        "jobs": {
+          "type": "integer"
+        },
+        "skills": {
+          "type": "integer"
+        },
+        "nodes": {
+          "type": "integer"
+        },
+        "edges": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

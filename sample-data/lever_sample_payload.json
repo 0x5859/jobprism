@@ -1,0 +1,35 @@
+{
+  "postings": [
+    {
+      "id": "lever-001",
+      "text": "Platform Engineer",
+      "hostedUrl": "https://jobs.lever.co/acme/platform-engineer",
+      "applyUrl": "https://jobs.lever.co/acme/apply/lever-001",
+      "descriptionHtml": "<p>Build Python services for internal tooling.</p><p>Location: Taipei, Taiwan.</p>",
+      "categories": {
+        "location": {
+          "name": "Taipei",
+          "country": "Taiwan"
+        },
+        "commitment": "Full Time"
+      },
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-03-21",
+      "workplaceType": "hybrid"
+    },
+    {
+      "leverId": "lever-002",
+      "title": "Backend Engineer",
+      "description": "Work on internal APIs.<br>Based in Remote.",
+      "categories": {
+        "location": "Remote",
+        "commitment": "Contract"
+      },
+      "hostedUrl": "https://jobs.lever.co/acme/backend-engineer",
+      "updatedAt": "2026-03-22"
+    }
+  ],
+  "meta": {
+    "companyName": "Acme"
+  }
+}

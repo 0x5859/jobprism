@@ -1,0 +1,24 @@
+{
+  "crawler_name": "company-site-crawler",
+  "crawler_version": "1.0.0",
+  "source_key": "bytedance_campus",
+  "list_url": "https://jobs.bytedance.com/campus/position/list?keywords=",
+  "started_at": "2026-04-05T00:00:00+00:00",
+  "finished_at": "2026-04-05T00:05:00+00:00",
+  "pages_visited": [
+    "https://jobs.bytedance.com/campus/position/list?keywords=",
+    "https://jobs.bytedance.com/campus/position/7210243621324671288/detail"
+  ],
+  "jobs_emitted": 1,
+  "jobs_skipped": 0,
+  "extraction_failures": [],
+  "warnings": [],
+  "robots_checked": [
+    {
+      "url": "https://jobs.bytedance.com/campus/position/list?keywords=",
+      "robots_url": "https://jobs.bytedance.com/robots.txt",
+      "allowed": true
+    }
+  ],
+  "max_jobs": 1
+}

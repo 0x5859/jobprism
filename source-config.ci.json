@@ -1,0 +1,122 @@
+{
+  "//": "Production/CI source config. Live public job-board APIs only (stdlib urllib, no Playwright). Chinese company data comes from data/snapshots/*.jsonl via --import-input, refreshed locally by the crawler bundle. Every board slug verified 200 on 2026-07-06. max_jobs caps keep CI build time and graph JSON bounded.",
+  "sources": [
+    {
+      "name": "anthropic-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "anthropic",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "openai-ashby",
+      "type": "ashby",
+      "enabled": true,
+      "config": {
+        "job_board": "openai",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "databricks-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "databricks",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "scaleai-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "scaleai",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "stripe-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "stripe",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "cloudflare-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "cloudflare",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "figma-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "figma",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "airbnb-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "airbnb",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "duolingo-greenhouse",
+      "type": "greenhouse",
+      "enabled": true,
+      "config": {
+        "board": "duolingo",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "mistral-lever",
+      "type": "lever",
+      "enabled": true,
+      "config": {
+        "account": "mistral",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "palantir-lever",
+      "type": "lever",
+      "enabled": true,
+      "config": {
+        "account": "palantir",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "notion-ashby",
+      "type": "ashby",
+      "enabled": true,
+      "config": {
+        "job_board": "notion",
+        "max_jobs": 40
+      }
+    },
+    {
+      "name": "linear-ashby",
+      "type": "ashby",
+      "enabled": true,
+      "config": {
+        "job_board": "linear",
+        "max_jobs": 40
+      }
+    }
+  ]
+}

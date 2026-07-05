@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "name": "example-jsonld-page",
+      "type": "jsonld",
+      "enabled": true,
+      "config": {
+        "html_file": "sample-data/raw_html/sample_job_posting.html"
+      }
+    },
+    {
+      "name": "fallback-html-page",
+      "type": "html",
+      "enabled": true,
+      "config": {
+        "html_file": "sample-data/raw_html/sample_html_fallback.html",
+        "company_name": "Fallback Labs"
+      }
+    },
+    {
+      "name": "tencent-company-site",
+      "type": "company_site",
+      "enabled": true,
+      "config": {
+        "source": "tencent_campus",
+        "max_jobs": 20,
+        "delay_seconds": 1.0
+      }
+    },
+    {
+      "name": "bytedance-company-site",
+      "type": "company_site",
+      "enabled": true,
+      "config": {
+        "source": "bytedance_campus",
+        "max_jobs": 20,
+        "delay_seconds": 1.0
+      }
+    }
+  ]
+}

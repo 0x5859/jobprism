@@ -1,0 +1,421 @@
+{
+  "python": {
+    "id": "skill:python",
+    "label": "Python",
+    "aliases": [
+      "python3",
+      "py"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "java": {
+    "id": "skill:java",
+    "label": "Java",
+    "aliases": [
+      "jvm"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "javascript": {
+    "id": "skill:javascript",
+    "label": "JavaScript",
+    "aliases": [
+      "js",
+      "es6"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "typescript": {
+    "id": "skill:typescript",
+    "label": "TypeScript",
+    "aliases": [
+      "ts"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "go": {
+    "id": "skill:go",
+    "label": "Go",
+    "aliases": [
+      "golang"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "rust": {
+    "id": "skill:rust",
+    "label": "Rust",
+    "aliases": [],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "kotlin": {
+    "id": "skill:kotlin",
+    "label": "Kotlin",
+    "aliases": [],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "swift": {
+    "id": "skill:swift",
+    "label": "Swift",
+    "aliases": [],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "scala": {
+    "id": "skill:scala",
+    "label": "Scala",
+    "aliases": [],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "php": {
+    "id": "skill:php",
+    "label": "PHP",
+    "aliases": [],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "c#": {
+    "id": "skill:c-sharp",
+    "label": "C#",
+    "aliases": [
+      "csharp",
+      ".net"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "systemverilog": {
+    "id": "skill:systemverilog",
+    "label": "SystemVerilog",
+    "aliases": [
+      "sv"
+    ],
+    "parent_id": "skill:digital-design",
+    "category": "language"
+  },
+  "verilog": {
+    "id": "skill:verilog",
+    "label": "Verilog",
+    "aliases": [],
+    "parent_id": "skill:digital-design",
+    "category": "language"
+  },
+  "c++": {
+    "id": "skill:c-plus-plus",
+    "label": "C++",
+    "aliases": [
+      "cpp"
+    ],
+    "parent_id": "skill:programming-languages",
+    "category": "language"
+  },
+  "silicon photonics": {
+    "id": "skill:silicon-photonics",
+    "label": "Silicon Photonics",
+    "aliases": [
+      "pic",
+      "integrated photonics",
+      "硅光"
+    ],
+    "parent_id": "skill:photonics",
+    "category": "domain"
+  },
+  "fpga": {
+    "id": "skill:fpga",
+    "label": "FPGA",
+    "aliases": [],
+    "parent_id": "skill:digital-design",
+    "category": "domain"
+  },
+  "sta": {
+    "id": "skill:sta",
+    "label": "Static Timing Analysis",
+    "aliases": [
+      "static timing analysis"
+    ],
+    "parent_id": "skill:chip-design",
+    "category": "domain"
+  },
+  "machine learning": {
+    "id": "skill:machine-learning",
+    "label": "Machine Learning",
+    "aliases": [
+      "ml",
+      "机器学习"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "deep learning": {
+    "id": "skill:deep-learning",
+    "label": "Deep Learning",
+    "aliases": [
+      "dl",
+      "深度学习"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "llm": {
+    "id": "skill:llm",
+    "label": "Large Language Models",
+    "aliases": [
+      "large language model",
+      "large language models",
+      "大模型",
+      "大语言模型"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "nlp": {
+    "id": "skill:nlp",
+    "label": "Natural Language Processing",
+    "aliases": [
+      "natural language processing",
+      "自然语言处理",
+      "自然语言"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "computer vision": {
+    "id": "skill:computer-vision",
+    "label": "Computer Vision",
+    "aliases": [
+      "cv",
+      "计算机视觉",
+      "图像识别"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "multimodal": {
+    "id": "skill:multimodal",
+    "label": "Multimodal",
+    "aliases": [
+      "多模态"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "recommendation systems": {
+    "id": "skill:recommendation-systems",
+    "label": "Recommendation Systems",
+    "aliases": [
+      "recommendation",
+      "推荐系统",
+      "推荐算法"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "search": {
+    "id": "skill:search",
+    "label": "Search",
+    "aliases": [
+      "搜索",
+      "搜索引擎",
+      "搜索算法"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "reinforcement learning": {
+    "id": "skill:reinforcement-learning",
+    "label": "Reinforcement Learning",
+    "aliases": [
+      "rl",
+      "强化学习"
+    ],
+    "parent_id": "skill:ai",
+    "category": "domain"
+  },
+  "data analysis": {
+    "id": "skill:data-analysis",
+    "label": "Data Analysis",
+    "aliases": [
+      "data analytics",
+      "数据分析"
+    ],
+    "parent_id": "skill:data",
+    "category": "domain"
+  },
+  "data engineering": {
+    "id": "skill:data-engineering",
+    "label": "Data Engineering",
+    "aliases": [
+      "data engineer",
+      "数据工程",
+      "数据开发",
+      "数据仓库",
+      "数仓"
+    ],
+    "parent_id": "skill:data",
+    "category": "domain"
+  },
+  "big data": {
+    "id": "skill:big-data",
+    "label": "Big Data",
+    "aliases": [
+      "大数据"
+    ],
+    "parent_id": "skill:data",
+    "category": "domain"
+  },
+  "sql": {
+    "id": "skill:sql",
+    "label": "SQL",
+    "aliases": [],
+    "parent_id": "skill:data",
+    "category": "language"
+  },
+  "backend": {
+    "id": "skill:backend",
+    "label": "Backend",
+    "aliases": [
+      "back-end",
+      "server-side",
+      "后端",
+      "后台",
+      "服务端"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "frontend": {
+    "id": "skill:frontend",
+    "label": "Frontend",
+    "aliases": [
+      "front-end",
+      "前端",
+      "web前端"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "fullstack": {
+    "id": "skill:fullstack",
+    "label": "Full Stack",
+    "aliases": [
+      "full stack",
+      "full-stack",
+      "全栈"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "android": {
+    "id": "skill:android",
+    "label": "Android",
+    "aliases": [
+      "安卓"
+    ],
+    "parent_id": "skill:mobile",
+    "category": "domain"
+  },
+  "ios": {
+    "id": "skill:ios",
+    "label": "iOS",
+    "aliases": [],
+    "parent_id": "skill:mobile",
+    "category": "domain"
+  },
+  "mobile": {
+    "id": "skill:mobile",
+    "label": "Mobile",
+    "aliases": [
+      "移动端",
+      "客户端"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "react": {
+    "id": "skill:react",
+    "label": "React",
+    "aliases": [
+      "react.js",
+      "reactjs"
+    ],
+    "parent_id": "skill:frontend",
+    "category": "framework"
+  },
+  "vue": {
+    "id": "skill:vue",
+    "label": "Vue",
+    "aliases": [
+      "vue.js",
+      "vuejs"
+    ],
+    "parent_id": "skill:frontend",
+    "category": "framework"
+  },
+  "microservices": {
+    "id": "skill:microservices",
+    "label": "Microservices",
+    "aliases": [
+      "微服务",
+      "分布式",
+      "高并发"
+    ],
+    "parent_id": "skill:backend",
+    "category": "domain"
+  },
+  "docker": {
+    "id": "skill:docker",
+    "label": "Docker",
+    "aliases": [
+      "容器"
+    ],
+    "parent_id": "skill:devops",
+    "category": "tool"
+  },
+  "kubernetes": {
+    "id": "skill:kubernetes",
+    "label": "Kubernetes",
+    "aliases": [
+      "k8s"
+    ],
+    "parent_id": "skill:devops",
+    "category": "tool"
+  },
+  "devops": {
+    "id": "skill:devops",
+    "label": "DevOps",
+    "aliases": [
+      "运维",
+      "sre"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "qa": {
+    "id": "skill:qa",
+    "label": "Quality Assurance",
+    "aliases": [
+      "测试",
+      "测试开发",
+      "qa工程师"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  },
+  "algorithm": {
+    "id": "skill:algorithm",
+    "label": "Algorithm",
+    "aliases": [
+      "算法",
+      "算法工程师"
+    ],
+    "parent_id": "skill:software-engineering",
+    "category": "domain"
+  }
+}

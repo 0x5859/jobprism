@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/job-neighbors.schema.json",
+  "title": "JobNeighbors",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "required": [
+      "similar_jobs",
+      "skills",
+      "company_id"
+    ],
+    "properties": {
+      "similar_jobs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "job_id",
+            "score"
+          ],
+          "properties": {
+            "job_id": {
+              "type": "string"
+            },
+            "score": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "skills": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "skill_id",
+            "label",
+            "edge_type"
+          ],
+          "properties": {
+            "skill_id": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            },
+            "edge_type": {
+              "type": "string"
+            },
+            "weight": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "company_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/raw-job.schema.json",
+  "title": "RawJob",
+  "type": "object",
+  "required": [
+    "source_type",
+    "source_url",
+    "title",
+    "company_name",
+    "fetched_at"
+  ],
+  "properties": {
+    "source_type": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "external_job_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "location_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "employment_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "posted_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description_html": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "json_payload": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "fetched_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

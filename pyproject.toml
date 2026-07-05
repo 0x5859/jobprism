@@ -1,0 +1,8 @@
+[project]
+name = "recruit-graph-starter"
+version = "0.1.0"
+description = "Starter scaffold for a recruitment intelligence graph pipeline."
+requires-python = ">=3.11"
+
+[tool.setuptools]
+py-modules = []

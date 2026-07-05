@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recruitment Atlas</title>
+  <meta
+    name="description"
+    content="Public recruitment intelligence graph for exploring jobs, companies, and skills as one living graph."
+  />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div
+      id="graphStage"
+      class="graph-stage"
+      aria-label="Interactive recruitment graph"
+      aria-describedby="graphInstructions"
+    ></div>
+    <div class="graph-wash" aria-hidden="true"></div>
+
+    <!-- Compact control cluster: lens tabs + search. Nothing else at rest —
+         the graph owns the viewport. Elements app.js writes into but the
+         minimal design no longer surfaces stay in the DOM as [hidden]. -->
+    <aside id="searchRail" class="rail rail-search" aria-label="Search and navigation">
+      <div class="control-cluster">
+        <nav id="lensNav" class="lens-nav" aria-label="Primary navigation"></nav>
+
+        <label class="search-box" for="searchInput">
+          <span class="search-box-label" hidden>Search graph</span>
+          <div class="search-input-row">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              id="searchInput"
+              type="search"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="Search"
+              aria-describedby="searchLensMeta searchSummary"
+            />
+            <button id="searchClear" class="search-clear" type="button" aria-label="Clear search">✕</button>
+          </div>
+        </label>
+
+        <p id="searchLensLabel" class="eyebrow" hidden>Skills</p>
+        <p id="searchSummary" class="search-summary" aria-live="polite" hidden>Default: Skills</p>
+        <p id="searchLensMeta" hidden>Search results appear when you type.</p>
+
+        <section class="results-block" aria-label="Search results" hidden>
+          <div id="searchResults" class="results-list"></div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- One whisper of context at the bottom of the universe. -->
+    <div class="scene-hint" aria-live="polite" aria-atomic="true">
+      <p id="sceneKicker" hidden>Skills</p>
+      <p id="sceneTitle" hidden>Skills Lens</p>
+      <p id="sceneSubtitle" class="scene-hint-copy">
+        Click a skill node to expand its neighborhood.
+      </p>
+      <div id="sceneStats" hidden></div>
+      <p id="graphInstructions" hidden>
+        Use search and suggested links if you are navigating with a keyboard.
+      </p>
+    </div>
+
+    <aside id="detailRail" class="rail rail-detail" data-state="welcome" aria-label="Selection detail">
+      <div class="rail-panel detail-panel">
+        <header class="detail-head">
+          <div>
+            <p id="drawerKicker" class="eyebrow">Overview</p>
+            <h2 id="drawerTitle">Pick a node to begin</h2>
+          </div>
+          <button id="drawerClose" class="drawer-close" type="button" aria-label="Clear selection">✕</button>
+        </header>
+        <div id="detailContent" class="detail-content"></div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+{
+  "nvidia": {
+    "id": "company:nvidia",
+    "name": "NVIDIA"
+  },
+  "nvidia corporation": {
+    "id": "company:nvidia",
+    "name": "NVIDIA"
+  },
+  "openai": {
+    "id": "company:openai",
+    "name": "OpenAI"
+  },
+  "open ai": {
+    "id": "company:openai",
+    "name": "OpenAI"
+  },
+  "bytedance": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "byte dance": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "字节跳动": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "字节": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "抖音": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "tiktok": {
+    "id": "company:bytedance",
+    "name": "ByteDance"
+  },
+  "tencent": {
+    "id": "company:tencent",
+    "name": "Tencent"
+  },
+  "tencent holdings": {
+    "id": "company:tencent",
+    "name": "Tencent"
+  },
+  "腾讯": {
+    "id": "company:tencent",
+    "name": "Tencent"
+  },
+  "腾讯科技": {
+    "id": "company:tencent",
+    "name": "Tencent"
+  },
+  "alibaba": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "alibaba group": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "ali": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "阿里巴巴": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "阿里": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "taobao": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "淘宝": {
+    "id": "company:alibaba",
+    "name": "Alibaba"
+  },
+  "baidu": {
+    "id": "company:baidu",
+    "name": "Baidu"
+  },
+  "百度": {
+    "id": "company:baidu",
+    "name": "Baidu"
+  },
+  "meituan": {
+    "id": "company:meituan",
+    "name": "Meituan"
+  },
+  "美团": {
+    "id": "company:meituan",
+    "name": "Meituan"
+  },
+  "美团点评": {
+    "id": "company:meituan",
+    "name": "Meituan"
+  },
+  "jd": {
+    "id": "company:jd",
+    "name": "JD.com"
+  },
+  "jd.com": {
+    "id": "company:jd",
+    "name": "JD.com"
+  },
+  "京东": {
+    "id": "company:jd",
+    "name": "JD.com"
+  },
+  "xiaomi": {
+    "id": "company:xiaomi",
+    "name": "Xiaomi"
+  },
+  "小米": {
+    "id": "company:xiaomi",
+    "name": "Xiaomi"
+  },
+  "huawei": {
+    "id": "company:huawei",
+    "name": "Huawei"
+  },
+  "华为": {
+    "id": "company:huawei",
+    "name": "Huawei"
+  },
+  "netease": {
+    "id": "company:netease",
+    "name": "NetEase"
+  },
+  "网易": {
+    "id": "company:netease",
+    "name": "NetEase"
+  },
+  "didi": {
+    "id": "company:didi",
+    "name": "Didi"
+  },
+  "didi chuxing": {
+    "id": "company:didi",
+    "name": "Didi"
+  },
+  "滴滴": {
+    "id": "company:didi",
+    "name": "Didi"
+  },
+  "滴滴出行": {
+    "id": "company:didi",
+    "name": "Didi"
+  },
+  "kuaishou": {
+    "id": "company:kuaishou",
+    "name": "Kuaishou"
+  },
+  "快手": {
+    "id": "company:kuaishou",
+    "name": "Kuaishou"
+  },
+  "anthropic": {
+    "id": "company:anthropic",
+    "name": "Anthropic"
+  },
+  "databricks": {
+    "id": "company:databricks",
+    "name": "Databricks"
+  },
+  "scaleai": {
+    "id": "company:scaleai",
+    "name": "Scale AI"
+  },
+  "scale ai": {
+    "id": "company:scaleai",
+    "name": "Scale AI"
+  },
+  "stripe": {
+    "id": "company:stripe",
+    "name": "Stripe"
+  },
+  "cloudflare": {
+    "id": "company:cloudflare",
+    "name": "Cloudflare"
+  },
+  "figma": {
+    "id": "company:figma",
+    "name": "Figma"
+  },
+  "airbnb": {
+    "id": "company:airbnb",
+    "name": "Airbnb"
+  },
+  "duolingo": {
+    "id": "company:duolingo",
+    "name": "Duolingo"
+  },
+  "netflix": {
+    "id": "company:netflix",
+    "name": "Netflix"
+  },
+  "plaid": {
+    "id": "company:plaid",
+    "name": "Plaid"
+  },
+  "notion": {
+    "id": "company:notion",
+    "name": "Notion"
+  },
+  "linear": {
+    "id": "company:linear",
+    "name": "Linear"
+  },
+  "mistral": {
+    "id": "company:mistral",
+    "name": "Mistral AI"
+  },
+  "mistral ai": {
+    "id": "company:mistral",
+    "name": "Mistral AI"
+  },
+  "palantir": {
+    "id": "company:palantir",
+    "name": "Palantir"
+  },
+  "palantir technologies": {
+    "id": "company:palantir",
+    "name": "Palantir"
+  }
+}

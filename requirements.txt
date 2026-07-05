@@ -1,0 +1,2 @@
+# The starter pipeline uses the Python standard library only.
+# Add provider SDKs or parsing libraries here when you extend the project.

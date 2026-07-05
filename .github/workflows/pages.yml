@@ -1,0 +1,88 @@
+# Build the production site (live job-board APIs + committed snapshots) and
+# deploy to GitHub Pages.
+#
+# Data comes from two channels:
+#   1. Live fetch (every run): greenhouse/lever/ashby public JSON APIs listed
+#      in source-config.ci.json. Stdlib urllib only — no Playwright, no
+#      anti-bot risk. A failing board is logged and skipped, never fatal.
+#   2. Committed snapshots: data/snapshots/*.jsonl — Chinese company sites
+#      (tencent/bytedance) crawled locally with the Playwright bundle
+#      (includes/company_site_crawler_bundle/, see its README), then pushed.
+#
+# The daily cron keeps the deployed site fresh even without pushes
+# (00:00 UTC = 08:00 Beijing).
+#
+# Related docs:
+#   - docs/deploy-github-pages.md
+#   - scripts/build_site.sh (the build job's entrypoint)
+#   - scripts/run_demo.sh (fixture-only local demo, not used here)
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, but do not cancel an in-progress run
+# so a queued production deploy can finish cleanly.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install project dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -s requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+          # The demo path uses the Python standard library only
+          # (see pyproject.toml + requirements.txt header comment).
+
+      - name: Build dist/ (live APIs + snapshots)
+        run: bash scripts/build_site.sh
+
+      - name: Verify dist/ is non-empty
+        run: |
+          test -f dist/index.html
+          test -d dist/data
+          ls -la dist/
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
